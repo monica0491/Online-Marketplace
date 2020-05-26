@@ -1,0 +1,177 @@
+html{
+  font-size: 62.5%
+}
+
+body{
+  font: 1.6rem Helvetica;
+  height: 100vh;
+  margin: 0;
+}
+
+#root{
+  height: 100%
+}
+
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer";
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5 rem;
+}
+
+.header{
+  height: 70px;
+  grid-area: header;
+  background-color: #203040;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px;
+}
+
+.brand a{
+  color: #ffffff;
+  font-size: 2.5 rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header-links a{
+  color:#ffffff;
+  text-decoration: none;
+}
+
+.header-links a:hover{
+  color:#ff8000;
+}
+
+.main{
+  grid-area: main;
+}
+
+.footer{
+  grid-area: footer;
+  background-color: #203040;
+  color:#ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color: #ff8000
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.products li {
+  list-style-type: none;
+  padding: 0;
+  flex: 0 1 34rem;
+  margin: 1 rem;
+  height: 50 rem;
+  border-bottom: .1rem;
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.product-name{
+  font-weight: bold;
+}
+
+.product-image{
+  max-width: 34 rem;
+  max-height: 34 rem;
+}
+
+.back{
+  padding: left
+}
+
+.details{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.details-image{
+  flex: 2 1 60 rem;
+  widows: 100%;
+}
+
+.details-image img{
+  max-width: 60 rem;
+  padding-left: 100px;
+}
+
+.details-info{
+  flex: 1 1 30 rem;  
+}
+
+.details-action{
+  flex: 1 1 30 rem;
+  padding-right: 100px;
+  
+}
+
+.details-info ul, .details-action ul{
+  list-style-type: none;
+  padding: 0
+}
+
+.details-info li, .details-action li{
+  margin-bottom: 1 rem;
+}
+
+.back{
+  padding: 40px;
+}
+
+.details-action{
+  padding-left: 20px;
+  border: .1rem #808080 solid;
+  border-radius: 0.5 rem;
+  background-color: #f8f8f8;
+  padding: 1 rem;
+}
+
+.details-action ul li:last-child{
+  display: flex;
+  flex-direction: column;
+}
+
+.button{
+  padding: 1 rem;
+  border: .1 rem #808080 solid;
+  border-radius: 0.5 rem;
+  cursor: pointer;
+}
+.button:hover{
+  border: .1rem #404040 solid;
+}
+
+.button.primary{
+  background-color: #ffcc00
+}

@@ -1,0 +1,30 @@
+{
+  "name": "online-marketplace",
+  "version": "1.0.0",
+  "description": "# Unit 20 State Homework: 🏬 Online Marketplace",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon --watch backend --exec babel-node backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monica0491/Online-Marketplace.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monica0491/Online-Marketplace/issues"
+  },
+  "homepage": "https://github.com/monica0491/Online-Marketplace#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1"
+  }
+}
